@@ -10,20 +10,23 @@ function setup() {
 function draw() {
 
   background(240);
-  line(finishX, 0, finishX, height);
-  for (let i = 0; i < racerXs.length; i++) {
-    let y = startY + yStep * i;
-    if (racerXs[i] < finishX) {
-      racerXs[i] += random(1, 3);
+  if (racestart == 0) {
+    line(finishX, 0, finishX, height);
+    for (let i = 0; i < racerXs.length; i++) {
+      let y = startY + yStep * i;
+      if (racerXs[i] < finishX) {
+        racerXs[i] += random(1, 3);
+      }
+      circle(racerXs[i], y, 24);
+      textSize(15)
+      text("Press r to restart", 50, 30)
     }
-    circle(racerXs[i], y, 24);
   }
-  if(keyIsDown("r")){
+  if (keyIsDown("r")) {
     racestart = 1;
   }
-  if (racestart == 1 ) {
+  if (racestart == 1) {
     racerXs = [30, 50, 30, 31];
-    racestart= 0;
+    racestart = 0;
   }
-
 }
