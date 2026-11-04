@@ -176,17 +176,17 @@ function isWall(x, y) {
 }
 
 //Sprint (dash)
-// function keyPressed() {
-//   if (key === "q" || key === "Q") {
-//     P1sprintspeed = +P1sprintspeed + 5;
-//   } else {
-//     P1sprintspeed = 0;
-//   }
+function keyPressed() {
+  if (key === "q" || key === "Q") {
+    P1sprintspeed = +P1sprintspeed + 5;
+  } else {
+    P1sprintspeed = 0;
+  }
 
-//   if (key === "/") {
-//     P2sprintspeed = +P2sprintspeed + 5;
-//   } else {
-//     P2sprintspeed = 0;
-//   }
-// }
+  if (key === "/") {
+    P2sprintspeed = +P2sprintspeed + 5;
+  } else {
+    P2sprintspeed = 0;
+  }
+}
 // possibly make this a dash or smth in the future
