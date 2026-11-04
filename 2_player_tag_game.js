@@ -15,7 +15,6 @@ let P1sprintspeed = 2;
 let P2xpos = 770;
 let P2ypos = 170;
 let P2sprintspeed = 2;
-
 let bgxN = 36;
 let bgxStart = 0;
 let bgxStep = 50;
