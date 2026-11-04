@@ -10,11 +10,11 @@ function setup() {
 
 let P1xpos = 100;
 let P1ypos = 410;
-let P1sprintspeed = 0;
+let P1sprintspeed = 2;
 
 let P2xpos = 770;
 let P2ypos = 170;
-let P2sprintspeed = 0;
+let P2sprintspeed = 2;
 
 let bgxN = 36;
 let bgxStart = 0;
