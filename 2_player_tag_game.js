@@ -1,6 +1,6 @@
 // PLEASE READ
 
-//THIS IS A TWO PLAYER TAG GAME. ONE PLAYER CONTROLS USING WASD AND THE OTHER PLAYER USES ARROW KEYS. TO SPRINT RAPIDLY PRESS SPRINT KEY FOR PLAYER ONE PRESS "q" FOR PLAYER TWO USE "/"
+//THIS IS A TWO PLAYER TAG GAME. ONE PLAYER CONTROLS USING WASD AND THE OTHER PLAYER USES ARROW KEYS.
 
 //IF THE SCREEN TURNS RED THE PLAYER HAS BEEN TAGGED. SWITCH OFF EVERY TIME SOMEONE GETS TAGGED
 
@@ -173,19 +173,3 @@ function isWall(x, y) {
 
   return false;
 }
-
-//Sprint (dash)
-function keyPressed() {
-  if (key === "q" || key === "Q") {
-    P1sprintspeed = +P1sprintspeed + 5;
-  } else {
-    P1sprintspeed = 0;
-  }
-
-  if (key === "/") {
-    P2sprintspeed = +P2sprintspeed + 5;
-  } else {
-    P2sprintspeed = 0;
-  }
-}
-// possibly make this a dash or smth in the future
