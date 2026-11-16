@@ -16,13 +16,14 @@ function draw() {
     for (let i = 0; i < racerXs.length; i++) {
       let y = startY + yStep * i;
       if (racerXs[i] < finishX) {
-        racerXs[i] += random(-1, 5);
+        racerXs[i] += random(0, 5);
 
         if(keyCode === 39){
           racerXs[i] += 5
         }
       }
-      circle(racerXs[i], y, 24);
+      circle(racerXs[i], y, 20);
+      drawCar(racerXs[i], y)
     }
   }
   if (keyIsDown("r")) {
@@ -44,4 +45,8 @@ function keyPressed() {
     racerXs.pop();
   }
   resizeCanvas(600, startY + yStep * racerXs.length);
+}
+
+function drawCar (x, y) {
+  rect(x-12, y+7, 35, 13 )
 }
